@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Ropa+Sans|Suez+One&display=swap');
+
+/*heading: 'Suez One', serif; bodytext:'Ropa Sans', sans-serif*/
+/*color palette:#616161, #8aae92, #c4e3cb, #f4f9f4, #a6e3e9*/
+
+/*mobile screen view : 30rem*/
+body{
+    line-height: 1.4;
+    font-size: 0.75rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+h1{
+    background-image: url(../images/bg-img-m.jpg);
+    width:100%;
+    height: auto;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin:0;
+    font-family:'Suez One', serif;
+    color:#a6e3e9; 
+    text-align: center;
+}
+
+/*navigation css design*/
+.nav-bar-flexbox{
+    display:flex;
+    flex-direction: column;
+    padding:3%;
+    margin: 0;
+    background-color:#c4e3cb;
+    list-style: none;
+}
+.nav-bar-flexbox a{
+    text-decoration: none;
+    font-family: 'Ropa Sans', sans-serif;
+    color:#616161;
+}
+.nav-bar-flexbox a:hover{
+    color:darkcyan;
+}
+
+/*button css design*/
+.controls{
+    display: flex;
+    justify-content: space-between;
+    padding:0;
+    margin:0;
+    list-style: none;
+}
+.controls button{
+    padding:10px 32px;
+    background-color:#8aae92;
+    color:white;
+    font-family: 'Ropa Sans', sans-serif;
+}
+.controls button:hover{
+    background-color:#f4f9f4;
+    color:darkgreen;
+}
+
+#active {
+    color: darkblue;
+}
+
+.controls i{
+    font-size:20px;
+    padding-bottom:10px;
+}
+
+/*folded content css*/
+h2{
+    text-align: center;
+    font-family: 'Suez One', serif;
+    color:#616161;
+}
+.bodytext{
+    font-family: 'Ropa Sans', sans-serif;
+}
+
+/*footer*/
+.social-icons{
+    display: flex;
+    justify-content: space-around;
+    padding:10px;
+    background-color: #8aae92;
+    list-style: none;
+}
+.social-icons i{
+    font-size:25px;
+    color:#f4f9f4;
+}
+
+/*desktop view */
+@media screen and (min-width:60rem){
+    body{
+      line-height: 1.6;
+      font-size:1rem;
+      margin-left:100px;
+      margin-right:100px;
+    }
+    h1{
+        background-image: url(../images/bg-img.jpg);
+    }
+/*nav-bar css design for desktop view*/
+    .nav-bar-flexbox{
+        display:flex;
+        flex-direction: row;
+        justify-content:space-around;
+        padding-top:2%;
+        padding-bottom:2%;
+        padding-left: 100px;
+        padding-right: 100px;
+        font-size:1rem;
+    }
+/*buttons css design for desktop view*/
+    .controls button{
+        padding-top:20px;
+        padding-left:90px;
+        padding-right:90px;
+        font-size:1rem;
+    }
+
+/* main-content*/
+    h2{
+        text-align: left;
+    }
+    img{
+        float:left;
+        width:25%;
+    }
+    .bodytext{
+        margin-top:30px;
+        margin-bottom:50px;
+        margin-left:7px;
+        padding-left:250px;
+    }
+    
+/*footer*/
+ .social-icons i{
+    font-size:30px;
+    color:#f4f9f4;
+    }   
+}
+
+
